@@ -8,7 +8,7 @@ const btnStyle = (w, h) => {
 
 const UpDownLeftSquares = (props) => {
     const {w, h, resize, disableResize} = useDimension()
-    const {scale, start} = useAnimatedScale(0.02, 20)
+    const {scale, start} = useAnimatedScale(0.02 / 2, 20)
     useEffect(() => {
         resize()
         return disableResize
